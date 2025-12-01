@@ -1,9 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Disable Turbopack and force Webpack
-  turbopack: false,
-
   images: {
     domains: [],
   },
