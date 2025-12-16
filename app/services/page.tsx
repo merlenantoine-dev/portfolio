@@ -53,8 +53,7 @@ export default function ServicesPage() {
             key={s.title}
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.1 }}
-            className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 hover:border-neutral-700 transition"
+            className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 hover:border-neutral-700"
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-lg bg-neutral-950 border border-neutral-800 flex items-center justify-center">

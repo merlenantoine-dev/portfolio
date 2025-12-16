@@ -64,7 +64,6 @@ export default function HomePage() {
         <motion.p
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.15 }}
           className="text-neutral-300 text-lg max-w-xl mx-auto mb-8"
         >
           Je crée des applications web et mobiles performantes, élégantes et pensées pour offrir une expérience utilisateur exceptionnelle.
@@ -74,18 +73,17 @@ export default function HomePage() {
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
           className="flex flex-wrap justify-center gap-3"
         >
           <a
             href="/apps"
-            className="px-6 py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-500 transition flex items-center gap-2"
+            className="px-6 py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-500 flex items-center gap-2"
           >
             Voir mes apps <ChevronRight size={18} />
           </a>
           <a
             href="/services"
-            className="px-6 py-3 border border-neutral-700 rounded-lg text-neutral-200 hover:bg-neutral-900 transition"
+            className="px-6 py-3 border border-neutral-700 rounded-lg text-neutral-200 hover:bg-neutral-900"
           >
             Mes services
           </a>
@@ -113,8 +111,7 @@ export default function HomePage() {
               key={s.title}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 hover:border-neutral-700 transition"
+              className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 hover:border-neutral-700"
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 flex items-center justify-center bg-neutral-950 border border-neutral-800 rounded-lg">
@@ -205,8 +202,7 @@ export default function HomePage() {
               key={c.title}
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 hover:border-neutral-700 transition"
+              className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 hover:border-neutral-700"
             >
               <h3 className="text-xl font-semibold mb-3">{c.title}</h3>
               <p className="text-neutral-400 text-sm leading-relaxed">{c.desc}</p>
@@ -233,8 +229,7 @@ export default function HomePage() {
               key={app.title}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-neutral-900 border border-neutral-800 p-4 rounded-xl hover:border-neutral-700 transition"
+              className="bg-neutral-900 border border-neutral-800 p-4 rounded-xl hover:border-neutral-700"
             >
               <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden bg-neutral-800">
                 <Image src={app.img} fill alt={app.title} className="object-cover" />
